@@ -2,7 +2,6 @@ import { IData } from "../fetch"
 export default (element:HTMLElement,data: IData[]) => {
     requestAnimationFrame(() => step(element,data))
 }
-
 const step = (element:HTMLElement,data: any) => {
     const fragment = document.createDocumentFragment()
     for( let i = 0; i < 20; i++ ) {
